@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="16dp"
+            android:id="@+id/tv_name_v2"
+            android:text="name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_ava_v2"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
