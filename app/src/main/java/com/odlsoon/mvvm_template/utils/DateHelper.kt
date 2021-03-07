@@ -76,7 +76,7 @@ object DateHelper {
     }
 
     /**
-     * 1 to Senin
+     * 1 to Sunday
      */
     fun parseDayCodeToStringInEnglish(day: Int): String{
         val dayNames = arrayListOf<String>(

@@ -72,31 +72,32 @@ object PopupHelper {
         onPopupInstantiate(popupWindow)
     }
 
-    fun showMaterialDateRangePicker(context: Context, fm: FragmentManager, onPicked: (first: String, second: String)->Unit){
-        val pickerBuilder = MaterialDatePicker.Builder.dateRangePicker()
-        pickerBuilder.setTitleText("Test")
-
-        val picker = pickerBuilder.build()
-
-        picker.addOnPositiveButtonClickListener { selection ->
-            val dateSplitFirst = DateHelper.getDateInString(selection.first!!)
-            val dateSplitSecond = DateHelper.getDateInString(selection.second!!)
-
-            val firstDayName = DateHelper.getDayNameInEnglish(dateSplitFirst.day)
-            val firstMonthName = DateHelper.getMonthNameInEnglish(dateSplitFirst.month)
-
-            val lastDayName = DateHelper.getDayNameInEnglish(dateSplitSecond.day)
-            val lastMonthName = DateHelper.getMonthNameInEnglish(dateSplitSecond.month)
-
-            Log.d("TAG", "" + " " + selection.first + " " + dateSplitFirst.dayInMonth + " " + dateSplitFirst.month)
-            Log.d("TAG", "" +  selection.second + " " + dateSplitSecond.dayInMonth + " " + dateSplitSecond.month)
-
-            val firstDateString = firstDayName + " " + dateSplitFirst.dayInMonth + " " + firstMonthName + " " + dateSplitFirst.year
-            val lastDateString = lastDayName + " " + dateSplitSecond.dayInMonth + " " + lastMonthName + " " + dateSplitSecond.year
-
-            onPicked(firstDateString, lastDateString)
-        }
-
-        picker.show(fm, "")
-    }
+    // TODO: Error
+//    fun showMaterialDateRangePicker(context: Context, fm: FragmentManager, onPicked: (first: String, second: String)->Unit){
+//        val pickerBuilder = MaterialDatePicker.Builder.dateRangePicker()
+//        pickerBuilder.setTitleText("Test")
+//
+//        val picker = pickerBuilder.build()
+//
+//        picker.addOnPositiveButtonClickListener { selection ->
+//            val dateSplitFirst = DateHelper.getDateInString(selection.first!!)
+//            val dateSplitSecond = DateHelper.getDateInString(selection.second!!)
+//
+//            val firstDayName = DateHelper.parseDayCodeToStringInEnglish(dateSplitFirst.day)
+//            val firstMonthName = DateHelper.parseMonthCodeToStringEnglish(dateSplitFirst.month)
+//
+//            val lastDayName = DateHelper.parseDayCodeToStringInEnglish(dateSplitSecond.day)
+//            val lastMonthName = DateHelper.parseMonthCodeToStringEnglish(dateSplitSecond.month)
+//
+//            Log.d("TAG", "" + " " + selection.first + " " + dateSplitFirst.dayInMonth + " " + dateSplitFirst.month)
+//            Log.d("TAG", "" +  selection.second + " " + dateSplitSecond.dayInMonth + " " + dateSplitSecond.month)
+//
+//            val firstDateString = firstDayName + " " + dateSplitFirst.dayInMonth + " " + firstMonthName + " " + dateSplitFirst.year
+//            val lastDateString = lastDayName + " " + dateSplitSecond.dayInMonth + " " + lastMonthName + " " + dateSplitSecond.year
+//
+//            onPicked(firstDateString, lastDateString)
+//        }
+//
+//        picker.show(fm, "")
+//    }
 }

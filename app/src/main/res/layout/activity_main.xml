@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -13,7 +14,13 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_data"
-            android:text="DATA"
+            android:text="@string/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_dark_mode"
+            android:text="@string/dark_mode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

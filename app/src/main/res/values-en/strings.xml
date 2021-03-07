@@ -2,6 +2,6 @@
     <string name="app_name">mvvm-template</string>
 
     <string name="data">DATA</string>
-    <string name="dark_mode">Mode Malam</string>
-    <string name="sun_mode">Mode Siang</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="sun_mode">Sun Mode</string>
 </resources>
